@@ -19,7 +19,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/my-pic.jpg";
 
 const imageAltText = "desktop with books and laptop";
 
@@ -31,28 +31,28 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "🌍 World Wise",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Effortlessly explore 🌍, discover city details 🏙️, and track countries. Powered by React ⚛️, React Router 🛣️, and react-leaflet for immersive maps. Add notes, track adventures 🚀, and embark seamlessly.",
+    url: "https://worldwise-prakash.netlify.app/",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Film🎞️Fusion",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Flim Fusion is a React application that enhances the movie-watching experience by seamlessly integrating with the OMDB API. 🎬 Users can easily explore, rate, and manage their watched movies list",
+    url: "https://filmfusionn.netlify.app/",
   },
   {
     title: "My Resume Site",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Created from Microsoft's resume workshop and deployed to GitHub pages. 🌐 Includes my experience and design abilities. 🎨💼",
+    url: "https://resume-prakash.netlify.app/",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "React-Quiz ⚛️",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Dive into the React Quiz App! Race against the clock with 15 questions from a custom API. Each question gets just 30 seconds. Challenge your React know-how and get your score at the end! 🧠✨",
+    url: "https://reactquizforyall.netlify.app/",
   },
 ];
 
@@ -61,11 +61,12 @@ const Portfolio = () => {
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+        <div style={{ maxWidth: "40%", alignSelf: "center" }} className="section__pic-container">
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{ height: "90%", width: "100%", objectFit: "contain", marginLeft: "20px" }}
             alt={imageAltText}
+            className=""
           />
         </div>
         <div className="container">
